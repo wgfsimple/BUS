@@ -1,3 +1,8 @@
-[submodule "tests"]
-	path = tests/testdata
-	url = https://github.com/Bitconch/tests
+[submodule "vendor/bus-rust"]
+	path = vendor/bus-rust
+	url = https://github.com/Bitconch/bus-rust
+
+[submodule "vendor/rustelo-rust"]
+	path = vendor/rustelo-rust
+	url = https://github.com/caesarchad/rustelo-rust
+	branch = fixissue85
