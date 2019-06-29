@@ -1,65 +1,35 @@
 # Bitconch 
+
 A New Distributed Web Protocol for Smart Contracts and DApps. 
 
 This repo is the official implementation of the Bitconch Chain protocol.
 
-## File Structure
+## Testnet
 
-```
-|___blaze_gpu\
-|___build\
-|___cdylib\
-|___common\
-|___core\
-|___crypto\
-|___docs\
-|___gobin\
-|___scripts\
-|___smart_contract\
-|___tokenissue\
-|___vendor\
-|___whitepaper\
-|___deploy.py
-|___preset.sh
+There are two channels of testnet ```stable``` and ```nightly```.
 
-```
+We provided installation scripts for install ```stable``` version of Bitconch chain, code-name "Buffett" on the local machine.
 
-## Build
 
----
+## Build and Deploy
 
 ### Ubuntu
 
 
-1. run preset.sh to install environment
+1. run preset.sh to install pre-requisits
 
 ```
 preset.sh
 ```
 
-2. pre-compile source files
-
 ```
-python3 deploy.py
+pip3 install colorama
 ```
 
-3. compile and build binaries to ./cmd folder
-```
-./build/setup.sh
+2. deploy the Bitconch 
 
 ```
-4. create a leader node
-
-```
-./build/leader.sh
-
-```
-
-5. Open another terminal, create a voter node
-
-
-```
-./build/voter-x.sh
+./deploy-stable.py
 
 ```
 
@@ -90,7 +60,7 @@ python3 deploy.py
 
 ---
 
-People wishing to submit BUSIPs, first should propose their idea or document to the caesar@bitconch.io mailing list. After discussion, please open a PR. After copy-editing and acceptance, it will be published here.
+People wishing to submit BUSIPs, first should propose their idea or document to the issue tab. After discussion, please open a PR. After copy-editing and acceptance, it will be published here.
 
 We are fairly liberal with approving BIPs, and try not to be too involved in decision making on behalf of the community. The exception is in very rare cases of dispute resolution when a decision is contentious and cannot be agreed upon. In those cases, the conservative option will always be preferred.
 
@@ -98,4 +68,4 @@ Having a BIP here does not make it a formally accepted standard until its status
 
 
 # Magna Carta of Bitconch
-Bitconch is dedicated to build a global community of developers. This part is still in *WIP*, please send your email to caesar@bitconch.io if you have any good ideas.
+Bitconch is dedicated to build a global community of developers. This part is still in *WIP*, please post your ideas to the issue with tag of #BUSIP
